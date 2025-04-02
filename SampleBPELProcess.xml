@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpel-process name="SampleBPELProcess">
+  <input-message>
+    <element name="Request" type="string"/>
+  </input-message>
+  <output-message>
+    <element name="Response" type="string"/>
+  </output-message>
+  <process>
+    <assign>
+      <copy>
+        <from>"Hello, " || Request</from>
+        <to>Response</to>
+      </copy>
+    </assign>
+  </process>
+</bpel-process>
